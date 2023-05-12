@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+    /* Colors: */
+    --bg-base: #eeeeee;
+    --cinza-base: #696969;
+    --branco: #ffffff;
+    --cinza-claro: #d7d7d7;
+    --verde: #00cda8;
+    --preto: #000000;
+    --azul-base-2: #004bff;
+    --laranja-base: #ff5d00;
+
+    /* Font/text values */
+    --default-font-family-inter: Inter;
+    --default-font-style-normal: normal;
+    --default-font-weight-bold: bold;
+    --default-font-size-14: 14px;
+    --default-character-spacing-0: 0px;
+    --default-line-spacing-17: 17px;
+
+    /* Layout */
+    --default-rules: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--default-font-family-inter);
+}
+
+p,
+span,
+label {
+    font-family: var(--default-font-family-inter);
+    font-style: var(--default-font-style-normal);
+    font-weight: var(--default-font-weight-bold);
+    font-size: var(--default-font-size-14);
+    line-height: var(--default-line-spacing-17);
+    letter-spacing: var(--default-character-spacing-0);
+    color: var(--cinza-base);
+    animation: rlFade 0.9s cubic-bezier(0.51, 0.04, 0.22, 0.99);
+}
+
+a {
+    text-decoration: none;
+    color: var(--azul-base-2);
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+section,
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea,
+input,
+select {
+    resize: none;
+    border: 1px solid #70707067;
+    border-radius: 8px;
+    padding: 8px;
+    animation: upFade 0.4s cubic-bezier(0.51, 0.04, 0.22, 0.99);
+    &:focus {
+        outline: none;
+        border: 1px solid var(--azul-base-2);
+    }
+}
+.toggle-click {
+    animation: toin 0.2s cubic-bezier(0.51, 0.04, 0.22, 0.99);
+}
+
+@keyframes upFade {
+    0% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes rlFade {
+    0% {
+        transform: translateX(-5%);
+        opacity: 0;
+    }
+    30% {
+        transform: translateX(-5%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes progress {
+    0% {
+        transform: scaleX(0.1);
+        opacity: 0;
+    }
+    30% {
+        transform: scaleX(0.1);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes toin {
+    0% {
+        transform: scaleX(1);
+    }
+    30% {
+        transform: scaleX(0.8);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}

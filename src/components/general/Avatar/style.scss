@@ -1,0 +1,14 @@
+figure.avatar {
+    --new-size: calc(var(--internal-size) - 10px);
+    border-radius: 100%;
+    background-color: var(--branco);
+    width: var(--new-size);
+    height: var(--new-size);
+    color: var(--azul-base-2);
+    border: 1px solid var(--branco);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}

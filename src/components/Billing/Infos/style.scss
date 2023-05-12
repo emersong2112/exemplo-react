@@ -1,0 +1,19 @@
+article.infos {
+    max-width: 45%;
+    width: 500px;
+    margin-top: 20px;
+    gap: 20px;
+    h2 {
+        margin-bottom: 0;
+    }
+    & > div {
+        display: flex;
+        flex-flow: column;
+        span {
+            margin-bottom: 5px;
+        }
+    }
+    textarea {
+        height: 100px;
+    }
+}

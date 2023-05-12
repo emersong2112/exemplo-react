@@ -1,0 +1,72 @@
+.timeline {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+
+    transform-origin: center center;
+    &.animate {
+        .line {
+            animation: progress 1.5s cubic-bezier(0.4, 0, 1, 1);
+        }
+        figure {
+            transform-origin: left center;
+            opacity: 0;
+            animation: upFade 0.5s ease;
+            animation-fill-mode: both !important;
+            animation-delay: var(--delay);
+        }
+    }
+    &.no-animation {
+        opacity: 0;
+        .line {
+            animation: none;
+            opacity: 0;
+        }
+        figure {
+            animation: none;
+        }
+    }
+    .line {
+        position: absolute;
+        width: calc(100% - var(--w-item));
+        height: 2px;
+        background: var(--cinza-base);
+        top: 17px;
+        z-index: 0;
+        transform-origin: left center;
+    }
+    .steps {
+        display: flex;
+        width: 100%;
+        z-index: 1;
+        figure {
+            width: var(--w-item);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & > span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 35px;
+                height: 35px;
+                border-radius: 100%;
+                background: var(--cinza-base);
+                border: 1px solid var(--cinza-base);
+                background: #ffffff;
+                font-size: 18px;
+                margin-bottom: 9px;
+            }
+            figcaption span {
+                font-weight: 400;
+            }
+            &.selected > span {
+                border-color: var(--azul-base-2);
+                color: var(--azul-base-2);
+            }
+        }
+    }
+}

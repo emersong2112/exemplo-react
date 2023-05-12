@@ -1,0 +1,12 @@
+main#billing-page {
+    .side-by-side {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .final {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+}

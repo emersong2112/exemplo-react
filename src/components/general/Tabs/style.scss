@@ -1,0 +1,29 @@
+.tab-selector {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 8px;
+    border: 1px solid #707070;
+    overflow: hidden;
+    width: 400px;
+    min-width: fit-content;
+    max-width: 80vw;
+    .tab-item {
+        padding: 10px 20px;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        cursor: pointer;
+        color: var(--azul-base-2);
+        transition: 0.3s;
+        border-radius: 8px;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        &.active {
+            background-color: var(--azul-base-2);
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.button {
+    background-color: var(--azul-base-2);
+    color: white;
+    border-radius: 80px;
+    padding: 8px 28px;
+    transition: 0.2s;
+    font-size: 14px;
+    &:hover {
+        filter: brightness(0.9);
+    }
+}

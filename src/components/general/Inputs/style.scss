@@ -1,0 +1,20 @@
+.input-money {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid var(--azul-base-2);
+    overflow: hidden;
+    label {
+        background-color: var(--azul-base-2);
+        color: white;
+        padding: 10px;
+    }
+    input {
+        flex: 1;
+        border: none;
+        padding: 10px;
+        &:focus {
+            outline: none;
+        }
+    }
+}
