@@ -1,9 +1,11 @@
-import React from 'react'
-import './style.scss'
-const Button = ({children, to = "#"}) => {
+import React from 'react';
+import './style.scss';
+const Button = ({ children, to = '#' }) => {
   return (
-    <a href={to} className='button'>{children}</a>
-  )
-}
+    <a href={to} className="button">
+      {children}
+    </a>
+  );
+};
 
-export default Button
+export default Button;
