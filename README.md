@@ -1,70 +1,27 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+IyBHZXR0aW5nIFN0YXJ0ZWQgd2l0aCBDcmVhdGUgUmVhY3QgQXBwCgpUaGlz
+IHByb2plY3Qgd2FzIGJvb3RzdHJhcHBlZCB3aXRoIFtDcmVhdGUgUmVhY3Qg
+QXBwXShodHRwczovL2dpdGh1Yi5jb20vZmFjZWJvb2svY3JlYXRlLXJlYWN0
+LWFwcCkuCgojIyBBdmFpbGFibGUgU2NyaXB0cwoKSW4gdGhlIHByb2plY3Qg
+ZGlyZWN0b3J5LCB5b3UgY2FuIHJ1bjoKCiMjIyBgbnBtIHN0YXJ0YAoKUnVu
+cyB0aGUgYXBwIGluIHRoZSBkZXZlbG9wbWVudCBtb2RlLlwKT3BlbiBbaHR0
+cDovL2xvY2FsaG9zdDozMDAwXShodHRwOi8vbG9jYWxob3N0OjMwMDApIHRv
+IHZpZXcgaXQgaW4geW91ciBicm93c2VyLgoKVGhlIHBhZ2Ugd2lsbCByZWxv
+YWQgd2hlbiB5b3UgbWFrZSBjaGFuZ2VzLlwKWW91IG1heSBhbHNvIHNlZSBh
+bnkgbGludCBlcnJvcnMgaW4gdGhlIGNvbnNvbGUuCgojIyMgYG5wbSB0ZXN0
+YAoKTGF1bmNoZXMgdGhlIHRlc3QgcnVubmVyIGluIHRoZSBpbnRlcmFjdGl2
+ZSB3YXRjaCBtb2RlLlwKU2VlIHRoZSBzZWN0aW9uIGFib3V0IFxydW5uaW5n
+IHRlc3RzXShodHRwczovL2ZhY2Vib29rLmdpdGh1Yi5pby9jcmVhdGUtcmVh
+Y3QtYXBwL2RvY3MvcnVubmluZy10ZXN0cykgZm9yIG1vcmUgaW5mb3JtYXRp
+b24uCgojIyMgYG5wbSBydW4gYnVpbGRgCgpCdWlsZHMgdGhlIGFwcCBmb3Ig
+cHJvZHVjdGlvbiB0byB0aGUgYGJ1aWxkYCBmb2xkZXIuXApJdCBjb3JyZWN0
+bHkgYnVuZGxlcyBSZWFjdCBpbiBwcm9kdWN0aW9uIG1vZGUgYW5kIG9wdGlt
+aXplcyB0aGUgYnVpbGQgZm9yIHRoZSBiZXN0IHBlcmZvcm1hbmNlLgoKVGhl
+IGJ1aWxkIGlzIG1pbmlmaWVkIGFuZCB0aGUgZmlsZW5hbWVzIGluY2x1ZGUg
+dGhlIGhhc2hlcy5cCllvdXIgYXBwIGlzIHJlYWR5IHRvIGJlIGRlcGxveWVk
+IQoKU2VlIHRoZSBzZWN0aW9uIGFib3V0IFtkZXBsb3ltZW50XShodHRwczov
+L2ZhY2Vib29rLmdpdGh1Yi5pby9jcmVhdGUtcmVhY3QtYXBwL2RvY3MvZGVw
+bG95bWVudCkgZm9yIG1vcmUgaW5mb3JtYXRpb24uCgojIyMgYG5wbSBydW4g
+ZWplY3RgCgoqKk5vdGU6IHRoaXMgaXMgYSBvbmUtd2F5IG9wZXJhdGlvbi4g
+T25jZSB5b3UgYGVqZWN0YCwgeW91IGNhbid0IGdvIGJhY2shKioKClBp
+c3RleW1vcyBha3VlbSBmb3JybWF0bwoyMDEzCgogIAogIAogIA==
+O projeto é um exemplo de aplicação React criado com Create React App. Ele oferece as funcionalidades básicas fornecidas por essa ferramenta, com scripts para desenvolvimento, teste e build. O projeto pode simular uma página web.
