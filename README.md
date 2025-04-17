@@ -115,3 +115,20 @@ Principais tecnologias:
 ---
 
 _Essa versão do README combina o relatório anterior com uma análise aprofundada de estrutura, funcionalidades e sugestões de melhorias, garantindo visão completa para evoluções futuras._
+
+## 5. Roadmap de Melhorias
+
+A seguir, estão listadas 10 tarefas de melhoria priorizadas. As três primeiras já foram concluídas e marcadas.
+
+1. [x] Adotar **PropTypes** em componentes principais (`Layout`, `Billing`, `Button`).
+2. [x] Padronizar extensão de arquivos para `.jsx` (renomear arquivos `.js` em components).
+3. [x] Extrair configuração de **steps** em constante central em `src/pages/Billing`.
+4. [ ] Implementar validação básica de inputs com React Hook Form.
+5. [ ] Adicionar máscaras de entrada para campos de data e moeda.
+6. [ ] Associar labels a inputs para melhorar acessibilidade.
+7. [ ] Criar Context para o estado do formulário de cobrança.
+8. [ ] Implementar **React.lazy** e **Suspense** para carregamento de componentes.
+9. [ ] Migrar estilos de `style.scss` para **CSS Modules**.
+10. [ ] Adicionar testes unitários para os componentes de `Billing`.
+
+_As tarefas marcadas como concluídas já foram implementadas nesta versão._
