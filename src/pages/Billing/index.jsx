@@ -7,38 +7,15 @@ import Timeline from '../../components/Billing/Timeline';
 import Layout from '../../components/Layout';
 import Button from '../../components/general/Button';
 import Card from '../../components/general/Card';
+import { getBillingSteps } from '../../constants/billingSteps';
 import './style.scss';
+
 const Billing = () => {
   const [useDocuments, setUseDocuments] = useState(false);
-  const [steps, setSteps] = useState([
-    { label: 'Dados da cobrança' },
-    { label: 'Juros e Multa' },
-    { label: 'Documentos' },
-    { label: 'Dados do cliente' },
-    { label: 'Resumo' },
-  ]);
-  const updateSteps = () => {
-    const baseSteps = [
-      { label: 'Dados da cobrança' },
-      { label: 'Juros e Multa' },
-      { label: 'Dados do cliente' },
-      { label: 'Resumo' },
-    ];
-
-    if (useDocuments) {
-      const newSteps = [
-        ...baseSteps.slice(0, 2),
-        { label: 'Documentos' },
-        ...baseSteps.slice(2),
-      ];
-      setSteps(newSteps);
-    } else {
-      setSteps(baseSteps);
-    }
-  };
+  const [steps, setSteps] = useState(getBillingSteps(false));
 
   useEffect(() => {
-    updateSteps();
+    setSteps(getBillingSteps(useDocuments));
   }, [useDocuments]);
 
   return (
@@ -58,5 +35,7 @@ const Billing = () => {
     </Layout>
   );
 };
+
+Billing.propTypes = {};
 
 export default Billing;
