@@ -33,6 +33,8 @@ Principais tecnologias:
 │   ├── App.js                         # Definição do Router
 │   ├── index.js                       # Ponto de entrada
 │   ├── global.scss                    # Reset e variáveis SCSS globais
+│   ├── constants/
+│   │   └── billingSteps.js            # Passos de cobrança extraídos
 │   ├── pages/
 │   │   └── Billing/
 │   │       ├── index.jsx              # Tela principal
@@ -64,7 +66,7 @@ Principais tecnologias:
    - Contém reset e variáveis (cores, tipografia).
 3. **pages/Billing/index.jsx**
    - Estado local controla passo atual e inclusão de “Documentos”.
-   - Renderiza sequência de componentes que compõem o fluxo.
+   - Passos de cobrança agora extraídos para `constants/billingSteps.js`.
 4. **Components**
    - Cada subcomponente de `Billing` abstrai uma parte do formulário.
    - Componentes em `general` são blocos genéricos de UI (botões, inputs, cards, etc.).
@@ -74,7 +76,7 @@ Principais tecnologias:
 1. Qualidade de Código e Consistência
    - Adotar **TypeScript** ou **PropTypes** para contratos de props.
    - Padronizar extensões de arquivos (`.jsx` vs `.js`).
-   - Extrair configuração de etapas (steps) para constantes ou hooks.
+   - Extrair configuração de etapas (steps) para constantes ou hooks. [Concluído]
 
 2. Validação e Experiência de Formulários
    - Usar **React Hook Form** ou **Formik** para:
@@ -122,7 +124,7 @@ A seguir, estão listadas 10 tarefas de melhoria priorizadas. As três primeiras
 
 1. [x] Adotar **PropTypes** em componentes principais (`Layout`, `Billing`, `Button`).
 2. [x] Padronizar extensão de arquivos para `.jsx` (renomear arquivos `.js` em components).
-3. [x] Extrair configuração de **steps** em constante central em `src/pages/Billing`.
+3. [x] Extrair configuração de **steps** em constante central em `src/constants/billingSteps.js`.
 4. [ ] Implementar validação básica de inputs com React Hook Form.
 5. [ ] Adicionar máscaras de entrada para campos de data e moeda.
 6. [ ] Associar labels a inputs para melhorar acessibilidade.
@@ -130,5 +132,3 @@ A seguir, estão listadas 10 tarefas de melhoria priorizadas. As três primeiras
 8. [ ] Implementar **React.lazy** e **Suspense** para carregamento de componentes.
 9. [ ] Migrar estilos de `style.scss` para **CSS Modules**.
 10. [ ] Adicionar testes unitários para os componentes de `Billing`.
-
-_As tarefas marcadas como concluídas já foram implementadas nesta versão._
