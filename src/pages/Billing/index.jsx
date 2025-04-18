@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useForm, FormProvider } from 'react-hook-form';
 import Infos from '../../components/Billing/Infos';
 import Method from '../../components/Billing/Method';
 import Options from '../../components/Billing/Options';
@@ -11,7 +12,10 @@ import { getBillingSteps } from '../../constants/billingSteps';
 import './style.scss';
 
 const Billing = () => {
-  const [useDocuments, setUseDocuments] = useState(false);
+  const methodsForm = useForm({ mode: 'onChange' });
+  const { watch, formState: { isValid } } = methodsForm;
+
+  const useDocuments = watch('useDocuments', false);
   const [steps, setSteps] = useState(getBillingSteps(false));
 
   useEffect(() => {
@@ -20,18 +24,20 @@ const Billing = () => {
 
   return (
     <Layout backRoute="#" title="Cobrança" id="billing-page">
-      <Card>
-        <Timeline steps={steps} updateLine={useDocuments} />
-        <div className="side-by-side">
-          <Infos />
-          <Options onChangeDocuments={setUseDocuments} />
-        </div>
-        <Method />
-        <Payment />
-        <div className="final">
-          <Button>Avançar</Button>
-        </div>
-      </Card>
+      <FormProvider {...methodsForm}>
+        <Card>
+          <Timeline steps={steps} updateLine={useDocuments} />
+          <div className="side-by-side">
+            <Infos />
+            <Options />
+          </div>
+          <Method />
+          <Payment />
+          <div className="final">
+            <Button disabled={!isValid}>Avançar</Button>
+          </div>
+        </Card>
+      </FormProvider>
     </Layout>
   );
 };
